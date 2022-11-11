@@ -1,0 +1,61 @@
+.site-footer{
+    background: #2C343E;
+}
+.footer__inner{
+    @include unsed-list;
+    padding: 48px 0px;
+}
+.footer__list{
+    @include unsed-list;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0px 0px 0px 103px;
+    padding: 0px;
+}
+.footer__item{
+    padding: 0px;
+    margin-right: 33px;
+    
+}
+.footer__link{
+    font-family: 'Barlow';
+    text-decoration: none;
+    font-weight: 700;  
+    font-size: 14px;
+    line-height: 48px;
+    color: #83888F;
+    &:hover{
+        color: #FEFCF7;   
+    }
+}
+.neetwork__logo{
+    padding: 0px;
+    margin: 0px;
+}
+.neetwork{
+    margin-left: auto;
+}
+.neetwork__link + .neetwork__link{
+    text-decoration: none;
+    margin-left:24px ;
+}
+.neetwork__link--facebook:hover{
+    text-decoration: none;
+    background: #FDD6BA;
+}
+@media only screen and(max-width:768px) {
+    .footer__inner{
+        display: block;
+        text-align: center;
+        padding-bottom: 32px;
+    }
+    .footer__list{
+        margin: 0px;
+    }
+}
+@media only screen and (max-width:576px) {
+    .footer__list{
+        display: block;
+    }
+    
+}

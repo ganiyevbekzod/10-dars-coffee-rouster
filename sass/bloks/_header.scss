@@ -1,0 +1,62 @@
+// header started
+.header__inner{
+    @include unsed-list;
+    padding: 45px 0px;
+}
+.header__list{
+    @include unsed-list;
+    margin-left: auto;
+    padding: 0;
+    list-style-type: none;
+}
+.header__item + .header__item {
+    margin-left: 32px;
+}
+.header__link{
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 15px;
+    letter-spacing: 0.923077px;
+    text-transform: uppercase;
+    color: #83888F;
+    text-decoration: none;
+    &:hover{
+        letter-spacing: 0.923077px;
+        text-transform: uppercase;
+        color: #333D4B;
+    }
+}
+.header__menu-btn{
+    display: none;
+    background-image: url("../images/menu_img.svg");
+    background-repeat: no-repeat;
+    background-position: top left;
+    margin-left: auto;
+    width: 16px;
+    height: 15px;
+    background-color: transparent;
+    background-size: 100%;
+    border: transparent;
+}
+@media only screen and (max-width:768px) {
+    .header__inner{
+        padding: 40px 0px;
+    }
+}
+
+@media only screen and (max-width:576px) {
+    .header__inner{
+        padding: 32px 0px;
+    }
+    .logo_pic{
+        width: 163px;
+        height:18px ;
+    }
+    .header__list{
+        display: none;
+    }
+    .header__menu-btn{
+        display: block;
+    }
+    
+}

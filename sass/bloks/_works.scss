@@ -1,0 +1,136 @@
+.works{
+    background: #2C343E;
+    border-radius: 10px;
+    margin-bottom: 150px;
+}
+.works__inner{
+    margin-top: 120px;
+    padding:100px 0px;
+}
+.works__span{
+    display:block;
+    width: 100%;
+    max-width: 760px;
+    border: 2px solid #FDD6BA;
+}
+.span{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.number{
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 72px;
+    color: #FDD6BA;
+    padding: 0px;
+}
+.works__oval{
+    position: absolute;
+    display: block;
+    background: transparent;
+    border: 2px solid #0E8784;
+    border-radius: 50%;
+    width: 31px;
+    height: 31px;
+}
+.works__oval:nth-child(2){
+    left: 350px;
+}
+.works__oval:nth-child(3){
+    right: 0;
+}
+.works__list{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 82px 0px 64px 0px;
+    gap: 80px;
+}
+.item__content2{
+    width: 100%;
+    max-width: 285px;
+}
+.works__item{
+    padding: 0;
+}
+.works__item::before{
+    position: absolute;
+    background-image: url("./images/number1.png");
+    width: 90px;
+    height: 72px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.works__title{
+    font-family: 'Fraunces';
+    font-style: normal;
+    font-weight: 900;
+    font-weight: 900;
+    font-size: 28px;
+    line-height: 32px;
+    margin: 0px;
+    padding: 42px 0 38px 0px;
+    color: #FFFFFF;
+}
+.works__title:nth-child(1){
+    width: 185px;
+}
+.works__text{
+    font-family: 'Barlow';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin: 0px;
+    padding: 0px;
+}
+.item__content2{
+    width: 100%;
+    max-width: 285px;
+    
+}
+@media only screen and (max-width:768px) {
+    .works__item{
+        width: 233px;
+        gap: 10px;
+    }
+}
+@media only screen and (max-width:576px) {
+    .works__suptitle{
+        text-align: center;
+    }
+    .works__span{
+        display: none;
+    }
+    .works__list{
+        display: block;
+        margin: 0 auto;
+        padding: 80px 0px;
+    }
+    .works__item{
+        width: 327px;
+        margin: 0 auto;
+    }
+    .works__item{
+        gap: 0px;
+        padding-bottom: 40px;
+
+    }
+    .works__title{
+        font-size: 28px;
+        line-height: 32px;
+        padding: 24px 0px;
+    }
+    .item__content2{
+        text-align: center;
+    }
+    .works__text{
+        display: block;
+        text-align: center;
+    }
+}
